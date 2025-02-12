@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    font-family: 'Poppins';
+    color: #fff;
+}
+main{
+    background-image: url("elements/background.jpg");
+    height: 100vh;
+    max-width: 100%;
+    box-sizing: border-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    z-index: 10;
+    overflow-x: hidden;
+}
+.main-box{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+main nav .navbar img{
+    width: 150px;
+}
+nav{
+    width: 80vw;
+    margin: auto;
+    padding:25px ;
+    filter: drop-shadow(5px 5px 10px black);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.but{
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;  
+}
+.buttons{
+    display: flex;
+    gap: 14px;
+}
+#sign-In:hover,.get-started:hover{
+    cursor: pointer;
+    background-color: rgb(221, 5, 5);
+}
+#lang:hover{
+    cursor: pointer;
+}
+#sign-In{
+    border: none;
+    background-color: red;
+    z-index: 20;
+    transition:0.4s ease-in-out;
+}
+#lang{
+    transition: 0.2s ease-in-out;
+    background-color: #212121;
+    /* padding: 6px 20px; */
+}
+.box{
+    color: #fff;
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 8px;
+    /* box-sizing: border-box; */
+    /* border: 2px solid red; */
+}
+.box :nth-child(1) h1{
+    width: 50vw;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 70px;
+    text-align: center;
+
+}
+.box >:nth-child(1) p{
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 70px;
+    text-align: center;
+}
+.box >:nth-child(2){
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.mid-buttons{
+    display: flex;
+    gap: 12px;
+}
+.mid-but{
+    padding:15px 20px ;
+    border-radius: 5px;
+}
+#email{
+    font-weight: 400;
+    font-size: 16px;
+    background-color: rgba(40, 40, 40, 0.6);
+    backdrop-filter: blur(10px);
+    border: 0.1px solid #fff;
+    color: #fff;
+    width: 350px;
+    min-width: 280px;
+}
+.get-started{
+    background-color: red;
+    font-size: 24px;
+    font-weight: 550;
+    border: none;
+    transition:0.3s ease-in-out;
+}
+.faq h5{
+    line-height: 70px;
+    /* margin-bottom: 10px; */
+}
+.faq{
+    color: #fff;
+    width: 80vw;
+    margin: auto;
+    font-size: 24px;
+    font-weight: 400;
+    /* border: 2px solid red; */
+}
+.faq-box{
+    margin: 4rem 0;
+}
+.faq-container{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.faq-answer{
+    display: none;
+    padding: 15px 20px;
+    max-height: 0px;
+    background-color: #313131;
+    /* transition: opacity 1s ease, max-height 1s ease;  */
+}
+.faq-items .faq-answer.show {
+    opacity: 1;
+    max-height: 500px; /* Adjust this as needed */
+}
+.questions{
+    padding: 20px 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border: none;
+    margin-bottom: 2px;
+    align-items: center;
+    font-size: 24px;
+    background-color: #313131;
+    font-weight: 400;
+    color: #fff;
+}
+.questions svg{
+    height: 2.5rem;
+}
+.faq-items .questions.open svg {
+    transform: rotate(45deg); /* Rotate 45 degrees for cross */
+}
+.questions{
+    cursor: pointer;
+    transition: 0.2s ease-in;
+    text-align: left;
+}
+.questions:hover{
+    background-color: #515151;
+}
+.before-footer-section{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.before-footer-section>h4{
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 2rem;
+}
+/* .before-footer-section>div{
+    max-width: 40vw;
+    margin: auto;
+} */
+.before-footer-section .mid-but .footer-gmail{
+    width: 550px;
+}
+footer{
+    max-width: 80vw;
+    margin: auto;
+    margin-top: 3rem;
+}
+footer div{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+}
+.columns{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 40px 0;
+    gap: 13px;
+    /* border: 1px solid red; */
+}
+.column-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 13px;
+}
+footer a{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+}
+.last-text{
+    padding: 40px 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+footer{
+    margin-bottom:3.5rem;
+}
+.divider{
+    height: 7px;
+    background-color: rgb(65, 65, 65);
+}
+.first{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: calc(100%-50px);
+    margin: auto;
+    padding: 75px;
+    gap: 50px;
+}
+section>div{
+    display: flex;
+    flex-direction: column;
+}
+section h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: left;
+}
+section p{
+    font-size: 20px;
+}
+section .text{
+    width: 30%;
+}
+section .secImg{
+    position: relative;
+    width: 500px;
+    z-index: 10;
+}
+section .secImg img{
+    width: 500px;
+}
+section .secImg video{
+    position: absolute;
+    width: 420px;
+    top: 65px;
+    left: 45px;
+    z-index: -1;
+}
+@media screen and (max-width: 850px) and (min-width: 300px) {
+    .box{
+        width: 90%;
+    }
+    .box :nth-child(1) h1{
+        font-size: 32px;
+        font-weight: 620;
+        line-height: 40px;
+        width: 95%;
+    }
+    .box >:nth-child(1) p{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 50px;
+    }
+    .box >:nth-child(2){
+        font-size: 16px;
+        font-weight: 500;
+    }
+    main nav .navbar img{
+        width: 98px;
+    }
+    .but{
+        color: #fff;
+        font-weight: 500;
+        font-size: 14px;  
+    }
+    .buttons{
+        display: flex;
+        gap: 12px;
+    }
+    nav{
+        width: 90vw;
+    }
+    .mid-buttons{
+        flex-wrap: wrap;
+        /* align-items: center; */
+        justify-content: center;
+    }
+    .faq{
+        width: 90vw;
+        font-size: 18px;
+    }
+    .questions{
+        /* padding: 20px 15px; */
+        font-size: 18px;
+    }
+    .columns{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .questions svg{
+        height: 1.3rem;
+    }
+
+    .first{
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 50px 20px;
+    }
+    .second{
+        flex-wrap: wrap-reverse;
+    }
+    section .text{
+        width: 95%;
+        margin: auto;
+        text-align: center;
+    }
+    section h2{
+        font-size: 32px;
+        margin-bottom: 20px;
+        font-weight: 600;
+        text-align: center;
+    }
+    section p{
+        font-size: 18px;
+    }
+    section .secImg{
+        width: 350px;
+    }
+    section .secImg img{
+        width: 350px;
+    }
+    section .secImg video{
+        width: 300px;
+        top: 45px;
+        left: 45px;
+        z-index: -1;
+    }
+    #email{
+        width: 270px;
+    }
+}
