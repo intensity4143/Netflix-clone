@@ -1,8 +1,8 @@
 # Netflix-clone
 This is a Netflix Clone built using HTML, CSS, and JavaScript, replicating the sleek UI and interactive experience of Netflix. The project features a responsive layout, hover effects, and a modern design.
 
-![Image](https://github.com/user-attachments/assets/7c973dda-a806-4e35-a2ed-51ef74749613)
+![Image](https://github.com/user-attachments/assets/1d2e3bde-5f86-4fd6-8a9b-254f7359e801)
 
-![Image](https://github.com/user-attachments/assets/8f0bb80b-8dba-4630-b006-6c621b3d66f7)
+![Image](https://github.com/user-attachments/assets/dd831a99-b469-4c32-8b9c-a820259ffaa9)
 
-![Image](https://github.com/user-attachments/assets/a5812ea4-9bb3-4ee5-8952-c23bb895a7ba)
+![Image](https://github.com/user-attachments/assets/26a92786-9b0a-46cc-8c56-94372639766a)
